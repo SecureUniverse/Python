@@ -1,2 +1,2 @@
-# NetworkScanner
-This is a network scanner based on scapy.
+# PythonScripts
+A Collection of Python Scripts
