@@ -10,8 +10,7 @@ A Collection of Python Scripts.
 <b>Note:</b> Use 'echo 1 > /proc/sys/net/ipv4' in attacker machine to route victim traffic to gateway<br/>
 ```python arp_spoofer.py --target 172.25.12.21 --gateway 172.25.12.1```
 ## Packet Sniffer
-<b>Notes:</b> 
+```python packet_sniffer.py --interface Ethernet```
 - Use 'pip install scapy_http'
 - Turn off all proxy
-- Combine this script with Arp Spoofer</br>
-```python packet_sniffer.py --interface Ethernet```
+- Combine this script with Arp Spoofer
