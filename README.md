@@ -1,5 +1,5 @@
 # Python Scripts
-A Collection of Python Script
+A Collection of Python Scripts.
 ## Linux MAC Changer
 <b>Note:</b> First octet of the new MAC should be even (because of Unicast)<br/>
 <b>Usage:</b> <i>> python linux_MAC_changer.py --interface eth0 --mac 12:11:11:11:11:11</i>
