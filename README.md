@@ -27,6 +27,6 @@ A Collection of Python Scripts.
   - Use 'iptables -I INPUT -j NFQUEUE --queue-num 0'
   - Use 'iptables -I OUTPUT -j NFQUEUE --queue-num 0'
 - Remotely (for dns spoofing)
-  - Use 'iptables -I FORWARD -j NFQUEUE --queue-num 0' to create a queue with name of '0' for packets in 'FORWARD' chain
+  - Use ```iptables -I FORWARD -j NFQUEUE --queue-num 0``` to create a queue with name of '0' for packets in 'FORWARD' chain
   - Use ARP Spoofer
 
