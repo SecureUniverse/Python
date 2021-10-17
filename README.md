@@ -9,3 +9,6 @@ A Collection of Python Script
 ## Arp_Spoofer
 <b>Note:</b> Use 'echo 1 > /proc/sys/net/ipv4' in attacker machine to route victim traffic to gateway<br/>
 <b>Usage:</b> <i>> python MAC_Changer.py --target 172.25.12.21 --gateway 172.25.12.1</i>
+## Packet_Sniffer
+<b>Note:</b> Use 'pip install scapy_http'<br/>
+<b>Usage:</b> <i>> python ???</i>
