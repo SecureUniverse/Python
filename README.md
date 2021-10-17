@@ -11,8 +11,8 @@ A Collection of Python Scripts.
 <b>Usage:</b> <i> python arp_spoofer.py --target 172.25.12.21 --gateway 172.25.12.1</i>
 ## Packet Sniffer
 <b>Notes:</b> 
-* Use 'pip install scapy_http'
-* Turn off all proxy
-* Combine this script with Arp Spoofer</br>
+- Use 'pip install scapy_http'
+- Turn off all proxy
+- Combine this script with Arp Spoofer</br>
 <b>Usage:</b> 
 ```python packet_sniffer.py --interface Ethernet```
