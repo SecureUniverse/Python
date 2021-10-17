@@ -23,9 +23,10 @@ A Collection of Python Scripts.
 ## DNS Spoofer
 ```python dns_spoofer.py```
 - Use 'pip install netfilterqueue'
-- Localy for test
-  - dd
-  - d
-- Remotely for dns spoof
-  - USe 'iptables -I FORWARD -j NFQUEUE --queue-num 0' to create a queue with name of '0' for packets in 'FORWARD' chain
+- Localy (for test)
+  - Use 'iptables -I INPUT -j NFQUEUE --queue-num 0'
+  - Use 'iptables -I OUTPUT -j NFQUEUE --queue-num 0'
+- Remotely (for dns spoofing)
+  - Use 'iptables -I FORWARD -j NFQUEUE --queue-num 0' to create a queue with name of '0' for packets in 'FORWARD' chain
+  - Use ARP Spoofer
 
