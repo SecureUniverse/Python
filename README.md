@@ -15,4 +15,4 @@ A Collection of Python Scripts.
 * Turn off all proxy
 * Combine this script with Arp Spoofer</br>
 <b>Usage:</b> 
-> python packet_sniffer.py --interface Ethernet
+```python packet_sniffer.py --interface Ethernet```
