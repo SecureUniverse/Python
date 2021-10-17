@@ -1,4 +1,4 @@
-# PythonScripts
+# Python Scripts
 A Collection of Python Script
 ## Linux MAC Changer
 <b>Note:</b> First octet of the new MAC should be even (because of Unicast)<br/>
