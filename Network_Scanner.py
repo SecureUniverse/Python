@@ -1,11 +1,13 @@
 import optparse
 import scapy.all as scapy
 
+
 def get_arguments():
     parser = optparse.OptionParser()
     parser.add_option("-t", "--target", dest="target", help="Target IP / IP range.")
     (options, arguments) = parser.parse_args()
     return options
+
 
 def scan(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -19,11 +21,13 @@ def scan(ip):
         clients_list.append(client_dict)
     return clients_list
 
+
 def print_result(results_list):
     print("IP\t\t\tMAC Address\n---------------------------------------------")
     for client in results_list:
         print(client["ip"] + "\t\t" + client["mac"])
 
+        
 if __name__ == '__main__':
     options = get_arguments()
     scan_result = scan(options.target)
