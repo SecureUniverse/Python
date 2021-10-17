@@ -13,6 +13,6 @@ A Collection of Python Scripts.
 <b>Notes:</b> 
 * Use 'pip install scapy_http'
 * Turn off all proxy
-* Combine this script with Arp Spoofer
+* Combine this script with Arp Spoofer</br>
 <b>Usage:</b> 
 * <i> python packet_sniffer.py --interface Ethernet</i>
