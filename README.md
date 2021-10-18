@@ -21,3 +21,8 @@ A Collection of Python Scripts.
 
 ## ARP Spoof Detector
 ```python arp_spoof_detector.py```
+
+## Maleware - Wifi Passwords
+```python packet_sniffer.py --interface Ethernet```
+- Set "Less secure apps" for gmail account
+- It will send all wifi credentials on laptopn to an email address
