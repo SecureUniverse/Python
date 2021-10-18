@@ -26,11 +26,12 @@ def get_password(network_names_list):
             output = (subprocess.check_output(command, shell=True)).decode()
             password = re.findall("(?:Content\s*:\s)(.*)", output)
             if password:
-                result += network_name + password[0] + "\n" + "------------------------------------------" + "\n"
+                result += network_name + password[0]
             else:
-                result += network_name + "NO PASS" + "\n" + "------------------------------------------" + "\n"            
+                result += network_name + "NO PASS"       
         except:
-            result += network_name + "ERROR" + "\n" + "------------------------------------------" + "\n"
+            result += network_name + "ERROR"
+        result += "\n------------------------------------------\n"
     return result
 
 
