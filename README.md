@@ -18,3 +18,6 @@ A Collection of Python Scripts.
 - Use ```pip install scapy_http```
 - Turn off all proxy
 - Combine this script with Arp Spoofer
+
+## ARP Spoof Detector
+```python arp_spoof_detector.py```
