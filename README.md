@@ -26,3 +26,8 @@ A Collection of Python Scripts.
 ```python packet_sniffer.py --interface Ethernet```
 - Set "Less secure apps" for gmail account
 - It will send all wifi credentials on laptop to an email address
+
+
+## Key Logger
+```python key_logger.py```
+- Set "Less secure apps" for gmail account
