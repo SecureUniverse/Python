@@ -31,3 +31,11 @@ A Collection of Python Scripts.
 ## Key Logger
 ```python key_logger.py```
 - Set "Less secure apps" for gmail account
+
+## Listener
+```python listener.py```
+- Set attacker machine`a IP for my_listener
+
+## Backdoor
+```python backdoor.py```
+- Set attacker machine`a IP for my_backdoor
