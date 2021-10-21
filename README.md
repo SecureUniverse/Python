@@ -34,8 +34,8 @@ A Collection of Python Scripts.
 
 ## Listener
 ```python listener.py```
-- Set attacker machine`a IP for my_listener
+- Set attacker machine`a IP for my_listener object
 
 ## Backdoor
 ```python backdoor.py```
-- Set attacker machine`a IP for my_backdoor
+- Set attacker machine`a IP for my_backdoor object
