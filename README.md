@@ -1,6 +1,18 @@
 # Python Scripts
 A Collection of Python Scripts.
 
+## Packaging
+
+### Windows
+- Install pyinstaller for python: ```python.exe -m pip install pyinstaller```
+- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole```
+
+### Linux
+- Install python for Windows inside Linux: ```wine msiexec /i python-2.7.14.msi```
+- Install pyinstaller for python: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller```
+- Install all imported library: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pynput```
+- Convert to exe: ```wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe backdoor.py --onefile --noconsole```
+- 
 ## Usage
 
 ### Linux MAC Changer
@@ -42,14 +54,4 @@ A Collection of Python Scripts.
 ```python backdoor.py```
 - Set attacker machine`a IP for my_backdoor object
 
-## Packaging
 
-### Windows
-- Install pyinstaller for python: ```python.exe -m pip install pyinstaller```
-- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole```
-
-### Linux
-- Install python for Windows inside Linux: ```wine msiexec /i python-2.7.14.msi```
-- Install pyinstaller for python: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller```
-- Install all imported library: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pynput```
-- Convert to exe: ```wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe backdoor.py --onefile --noconsole```
