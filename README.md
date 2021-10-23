@@ -45,9 +45,10 @@ A Collection of Python Scripts.
 ## Packaging
 
 ### Windows
-- Install pyinstaller for python
-```pyinstaller.exe backdoor.py --onefile --noconsole```
+- Install pyinstaller for python: ```d```
+- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole```
 
 ### Linux
-Install python for Windows inside Linux
-```wine msiexec /i pythonxxx.msi```
+- Install python for Windows inside Linux: ```wine msiexec /i python-2.7.14.msi```
+- Install pyinstaller for python: ```wine python.exe -m pip install pyinstaller```
+- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole```
