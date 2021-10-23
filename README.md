@@ -7,6 +7,7 @@ A Collection of Python Scripts.
 - Search pdf in [IconFinder](https://www.iconfinder.com/) to create an icon (Free, 512*\512, .ico)
 - To bypass AntiVirus, use [UPX](https://github.com/upx/upx/releases) to compress exe file: ```./upx /root/PycharmProjects/backdoor/dist/backdoor.exe -o compressed_bacdoor.exe```
 - Change the file extension:
+  - Install Characters 3.34.0: ```apt install gnome-characters```
   - Search for 'Right-to-left Override' in 'Characters' tool in Kali
   - Select 'Copy Character' to copy 'Unicode U+202E' to clipboard
   - Open notepad and write 'al\*fdp.exe' then paste in the place of star
