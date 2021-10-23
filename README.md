@@ -12,7 +12,7 @@ A Collection of Python Scripts.
 - Install pyinstaller for python: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller```
 - Install all imported library: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pynput```
 - Convert to exe: ```wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe backdoor.py --onefile --noconsole```
-- 
+
 ## Usage
 
 ### Linux MAC Changer
