@@ -7,7 +7,7 @@ A Collection of Python Scripts.
 - Search pdf in [IconFinder](https://www.iconfinder.com/) to create an icon (size:128px & 512*\512) with PNG format
 - Use [Convertor](https://www.zamzar.com/convert/png-to-ico/) to convert PNG to ICO (512\*512) & change the name to pdf.ico
 - To bypass AntiVirus, use [UPX](https://github.com/upx/upx) to compress exe file: ```./upx /root/PycharmProjects/backdoor/dist/backdoor.exe -o compressed_bacdoor.exe```
-- To change the fiel extension, search 'right to left' in 'Characters' tool from kali, Choose 'Right-to-Left override', select 'Copy Character', pasete in place of the star in 'human-refl\*fdp.exe' in the name of the file
+- To change the fiel extension, search 'right to left' in 'Characters' tool from kali, Choose 'Right-to-Left override', select 'Copy Character', paste in place of the star in 'human-refl\*fdp.exe' in the name of the file
 - Zip the pdf file (to hide the exe extension) and send to victim
 
 ### Windows
