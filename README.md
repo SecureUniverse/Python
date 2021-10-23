@@ -41,3 +41,10 @@ A Collection of Python Scripts.
 ### Backdoor
 ```python backdoor.py```
 - Set attacker machine`a IP for my_backdoor object
+
+## Packaging
+
+### Windows
+```pyinstaller.exe backdoor.py --onefile --noconsole```
+
+### Linux
