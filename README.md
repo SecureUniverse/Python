@@ -6,9 +6,12 @@ A Collection of Python Scripts.
 ### Common
 - Search pdf in [IconFinder](https://www.iconfinder.com/) to create an icon (Free, 512*\512, .ico)
 - To bypass AntiVirus, use [UPX](https://github.com/upx/upx/releases) to compress exe file: ```./upx /root/PycharmProjects/backdoor/dist/backdoor.exe -o compressed_bacdoor.exe```
-- To change the fiel extension, search 'right to left' in 'Characters' tool from kali, Choose 'Right-to-Left override', select 'Copy Character', paste in place of the star in 'human-refl\*fdp.exe' in the name of the file
-  - ss
-- Zip the pdf file (to hide the exe extension) and send to victim
+- Change the file extension:
+  - Search for 'Right-to-left Override' in 'Characters' tool in Kali
+  - Select 'Copy Character' to copy 'Unicode U+202E' to clipboard
+  - Open notepad and write 'al\*fdp.exe' then paste in the place of star
+  - Rename the file to 'alexe.pdf'
+- Zip the pdf file to hide the exe extension and send to victim
 
 ### Windows
 - Install pyinstaller for python: ```python.exe -m pip install pyinstaller```
