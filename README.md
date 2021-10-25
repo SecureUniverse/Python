@@ -68,14 +68,11 @@ A Collection of Python Scripts.
 
 ### Subdomain Discovery
 ```python subdomain_discovery.py```
-- Set
 
 ### Directory Discovery
 ```python directory_discovery.py```
-- Set
 
 ### Spider
 ```python spider.py```
-- Set
 
 
