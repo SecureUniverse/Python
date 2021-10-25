@@ -66,4 +66,16 @@ A Collection of Python Scripts.
 - Set attacker machine`a IP for my_backdoor object
 - Use a sample pdf file to show to user
 
+### Subdomain Discovery
+```python subdomain_discovery.py```
+- Set
+
+### Directory Discovery
+```python directory_discovery.py```
+- Set
+
+### Spider
+```python spider.py```
+- Set
+
 
