@@ -75,4 +75,7 @@ A Collection of Python Scripts.
 ### Spider
 ```python spider.py```
 
+### Login Bruteforce
+```python login_bruteforce.py```
+
 
