@@ -77,5 +77,6 @@ A Collection of Python Scripts.
 
 ### Login Bruteforce
 ```python login_bruteforce.py```
+- Must change to work with python3
 
 
