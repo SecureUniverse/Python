@@ -77,6 +77,11 @@ A Collection of Python Scripts.
 
 ### Login Bruteforce
 ```python login_bruteforce.py```
-- Must change to work with python3
 
+### XSS Scanner
+```python xss-scanner.py```
+- Change security level in DVWA
+  -  ```cd /var/www/dvwa/dvwa/include```
+  -  ```sude nano dvwaPae.inc.php```
+  -  ```d```  
 
