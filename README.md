@@ -82,6 +82,5 @@ A Collection of Python Scripts.
 ```python xss-scanner.py```
 - Change security level in DVWA
   -  ```cd /var/www/dvwa/dvwa/include```
-  -  ```sude nano dvwaPae.inc.php```
-  -  ```d```  
+  -  ```sude nano dvwaPage.inc.php```
 
