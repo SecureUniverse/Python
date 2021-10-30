@@ -2,8 +2,10 @@
 ```netstat -antp | grep 8080```
 
 ## Victim
-```Shell> cd*New Folder```
-```Shell> scan 192.168.162.128:21,23,80,8080,8888```
+```
+Shell> cd*New Folder
+Shell> scan 192.168.162.128:21,23,80,8080,8888
+```
 - With these options:
   - File Transfer
   - Target Directory Navigation
@@ -18,8 +20,10 @@
   - Add a new "if" statement like 'download' 
 
 ## Exporting To EXE
-```pip install pyinstaller```
-```pyinstaller -F -w client.py```
+```
+pip install pyinstaller
+pyinstaller -F -w client.py
+```
 
 ## Dynamic DNS Shell
 Register and make a dns record for your public ip
