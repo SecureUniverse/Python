@@ -2,6 +2,9 @@
 ```netstat -antp | grep 8080```
 
 ## Victim
+- File Transfer
+- Target Directory Navigation
+- Low Level Port Scanner
 ```Shell> cd*New Folder```
 ```Shell> scan 192.168.162.128:21,23,80,8080,8888```
 
