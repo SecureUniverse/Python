@@ -20,3 +20,13 @@
 ## Exporting To EXE
 ```pip install pyinstaller```
 ```pyinstaller -F -w client.py```
+
+## Dynamic DNS Shell
+Register and make a dns record for your public ip
+
+Install the agent on your server to automatically update dns record on noip.com while the ip changed:
+`cd /usr/local/src/
+wget http://www.noip.com/client/linux/noip-duc-linux.tar.gz
+tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1/
+make install`
