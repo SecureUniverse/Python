@@ -12,7 +12,7 @@ for line in lines:
     print(line.strip())
     
 #---------------------------  Write  ---------------------------
-f = open(‘/tmp/scores.txt’, ‘w’)
+f = open('/tmp/scores.txt', 'w')
 x = 3
 f.write(str(x))
 f.close()
