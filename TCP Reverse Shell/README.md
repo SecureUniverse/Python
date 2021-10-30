@@ -2,8 +2,8 @@
 ```netstat -antp | grep 8080```
 
 ## Victim
-```Shell> cd*New Folder
-Shell> scan 192.168.162.128:21,23,80,8080,8888```
+```Shell> cd*New Folder```
+```Shell> scan 192.168.162.128:21,23,80,8080,8888```
 
 ## Exercise 1
 - When we hit enter key multiple times our shell breaks due to improper handling of empty string. The simplest way is by adding a new line in our server code saying if the user input was empty string ' ' then we do nothing or we may send a trivial command like "whoami" ????????????????When we hit enter key multiple times our shell breaks due to improper handling of empty string. The simplest way is by adding a new line in our server code saying if the user input was empty string ' ' then we do nothing or we may send a trivial command like "whoami" ????????????????
@@ -14,5 +14,5 @@ Shell> scan 192.168.162.128:21,23,80,8080,8888```
   - Add a new "if" statement like 'download' 
 
 ## Exporting To EXE
-```pip install pyinstaller
-pyinstaller -F -w client.py```
+```pip install pyinstaller```
+```pyinstaller -F -w client.py```
